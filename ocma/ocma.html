@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OCMA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+<body>
+
+  <div class="top">
+    <a href="../index.html">Dinijs</a>
+    <a href="https://drive.google.com/file/d/1gI5nZ1nFmzPtto-TLR2ZJJumBsGG7gQA/view?usp=sharing" target="_blank"><img class="resume" src="pic/resume2.svg" alt="resume icon"></a>
+  </div>
+
+
+  <h1 class="after-top">Office of Citizenship and Migration Affairs (OCMA) website’s Residence Permits section's redesign</h1>
+
+
+  <nav>
+    <ul>
+      <li><a class="active" href="ocma.html">Case Study</a> </li>
+      <li><a href="https://dinijs.github.io/moveto/index.html" target="_blank">Open website <i class="fas fa-external-link-alt"></i></a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <p>Office of Citizenship and Migration Affairs (OCMA) is the main authority in Latvia regarding immigration. Their website provides information about passports, visas, residence permits, asylum seeking, immigration statistics, news, etc. This website has vast amounts of information covering wide range of topics. Similarly as other websites faced with complexity, it runs into problem of not providing information in a user friendly manner. As of December 2020, the website’s user interface has been redesigned to look uniform with other government and municipality websites. They all have same font style, colour scheme and layout structure, which improves the user experience. Moreover, the website has been (finally) adapted for both: mobile and desktop view.</p>
+    <p>Nevertheless some parts of the website have been improved somewhat superficially. A good looking user interface is necessary to provide a great user experience, but that is not the only important thing. Users are generally coming to government websites for information, therefore, a higher priority should be structuring information in a way that reduces friction and makes it easier for users to find what they are looking for. The particular section that I have redesigned is resident permit section. I believe that this section has a lot of things that can be improved and I will be outlining the problems and solutions in this case study.</p>
+  </section>
+
+  <div class="heading">
+    <h2>Research</h2>
+  </div>
+  <section>
+    <h3>Residence Permits page</h3>
+    <p>When a user first lands on the Residence Permits page, he is presented with a lot of information. The page could be divided in 4 parts:</p>
+    <ol>
+      <li>The first part explains what are residence permits;</li>
+      <li>The second part presents links to actual information about getting a residence permit;</li>
+      <li>The third part has information about documents that need to be presented upon receiving residence permit;</li>
+      <li>The fourth part has 13+ links to related information.</li>
+    </ol>
+
+    <p>The first issue is the enormous amount of information and lack of any direction as to where to start. There are a lot of useful links in the fourth section, but, since they are presented without any order, a user can easily overlook them and later in the process not return back to recheck. Another issue throughout the website is that most of the links take a user outside the website and/or does not present information in a readable manner.</p>
+    <p>If a user wants to know what documents should be submitted, he or she has to look at the second part and choose between four options:</p>
+
+    <picture class="snippet">
+      <source media="(min-width: 1300px)" srcset="../pic/snippetL.png">
+      <source media="(min-width: 900px)" srcset="../pic/snippetM.png">
+      <source media="(min-width: 400px)" srcset="../pic/snippetS.png">
+      <img class="ocma" src="../pic/snippetXS.png" alt="Chris standing up holding his daughter Elva">
+    </picture>
+
+    <p>There are a couple of issues with this part. First of all, the wording of these options is quite long and can be shortened. Second, a user needs to click on a link “stipulated in the list” that will take him outside the website and then review a list of countries to see if his country of citizenship is included. The third issue is that there are links to highly specific information: young Canadian and New Zealand citizen requirements might be useful to some people, but it crowds the page and makes the user experience overwhelming.</p>
+
+    <h3>Groups</h3>
+    <p>When a user clicks on the “following documents” He or she is presented with a list of different reasons for applying for residence permits. In total there are 31 different groups, some of them very wordy (the longest group description consists of 50 words). The groups can be categorised so that a user does not have to go through all 31 and some of the wording of group names could be simplified as well.</p>
+
+    <h3>Required documents</h3>
+    <p>When a user clicks on one of 31 groups a list of required documents is provided. However, after viewing the list user still does not know many crucial things:</p>
+    <ol>
+      <li>How long can a user stay in Latvia?</li>
+      <li>Where can a user submit the documents?</li>
+      <li>What is the necessary subsistence to stay in Latvia?</li>
+      <li>What are the next steps after submitting residence permit documents?</li>
+    </ol>
+  </section>
+
+  <div class="heading">
+    <h2>Redesign</h2>
+  </div>
+  <section>
+    <div class="iamockuptext element">
+      <p>The problem with the existing resident permit page is lack of a logical path for acquiring the necessary information. This is because the website will display the same information regardless of who is viewing it, as well as display information that is not yet necessary for a user. Thus, very often excess information is visible. The solution to fix this is to introduce a set of variables that would allow for sorting users and redirecting them to different pathways. In order to do this the information has to be gathered, “translated” from the various laws and consolidated from external sources that are already available in OCMA website.</p>
+
+      <h3>Categories</h3>
+      <p>Before changing the information structure of this section, a crucial task was categorising a list of 31 people groups, so that a user does not have to look through every single option. I was able to create 6 categories: Family relations, Past citizenship, Education, Work or Business, Investing, Other. The method that I used for categorising groups was through interviewing potential users and asking to sort cards with listed groups in stacks depending on their views how the groups would best fit together. On top of that, the group names in those categories were shortened and adjusted based on the information gathered from interviews.</p>
+
+      <h3>Required documents</h3>
+      <p>The next step was structuring the required documents page in a more user friendly manner. The following information is presented in 4 parts:</p>
+      <ol>
+        <li>The shortened version of group name as well as full group name.</li>
+        <li>The documents that have to be submitted. The specific embassy where documents have to be submitted changes depending on where a user comes from and the amount of necessary subsistence depends on the selected group.</li>
+        <li>Information about the maximum period of time a person can receive residence permit.</li>
+        <li>At the very end user can see what kind of documents he or she has to present to OCMA when receiving residence permit. This information was already present in the Residence permits page, however, since this is the final step of the process, a user will search for this information last.</li>
+      </ol>
+
+    </div>
+    <div class="iamockup element">
+      <img class="ocma" src="../pic/LongPhone2.png" alt="Mockup">
+    </div>
+  </section>
+
+  <section>
+    <h3>Information Architecture</h3>
+    <p class="element">By introducing a set of variables the user journey that was a chaotic mess at the beginning (first graph) now is a very straightforward and frustration free experience (second graph).</p>
+    <div class="IAold element hide-big">
+      <img class="ocma" src="../pic/IAold.png" alt="old information architecture">
+    </div>
+    <div class="IAnew element hide-big">
+      <img class="ocma" src="../pic/IAnew.png" alt="new information architecture">
+    </div>
+  </section>
+
+  <section class="hide-small">
+    <div class="element">
+      <img class="ocma" src="../pic/IAboth.png" alt="both IA graphs">
+    </div>
+  </section>
+
+  <section>
+    <h3>Variables</h3>
+    <p>The set of variables that were introduced are outlined in the table bellow.</p>
+    <br>
+    <table>
+      <thead>
+        <tr>
+          <th>Variable</th>
+          <th>Number of options</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Embassy</td>
+          <td>25</td>
+          <td>Indicates embassy in which user has to submit documents</td>
+        </tr>
+        <tr>
+          <td>Passport requirements</td>
+          <td>5</td>
+          <td>Indicates whether a user needs to submit statement of punishability</td>
+        </tr>
+        <tr>
+          <td>Necessary subsistence</td>
+          <td>8</td>
+          <td>Indicates amount of money required to stay in Latvia</td>
+        </tr>
+        <tr>
+          <td>Time of stay</td>
+          <td>15</td>
+          <td>Indicates the maximum time period of a residence permit</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <p>As a bonus, if a user comes from Canada or New Zealand, only he or she will be able to see the special information about travelling from those countries, which reduces information load to users from other countries.</p>
+  </section>
+
+
+  <div class="heading">
+    <h2>Final design</h2>
+  </div>
+  <section>
+    <p>You can view the final design in the tablet looking thing belllow or click <a href="https://dinijs.github.io/moveto/index.html">here</a> to view full site.</p>
+    <div class="website">
+      <embed class="link" src="https://dinijs.github.io/moveto/index.html">
+    </div>
+  </section>
+
+
+</body>
+</html>
