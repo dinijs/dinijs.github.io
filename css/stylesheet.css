@@ -10,7 +10,6 @@ body {
 }
 
 .card {
-
   position: relative;
   display: block;
 }
@@ -97,7 +96,7 @@ div.img_container:hover img:nth-child(1) {
 .link {
   height: calc(100vw * 0.6);
   max-height: 85vh;
-  min-height: 250px;
+  min-height: 600px;
   width: 100%;
   max-width: 1000px;
   /* width: calc(85vh/1.2); */
@@ -107,23 +106,16 @@ div.img_container:hover img:nth-child(1) {
 }
 
 .thumbnail {
-  height: 30vh;
-  background: #EDE7F6;
-  padding: 1.5em;
-  border-radius: 1em;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
+  margin-bottom: 2em;
+  text-align: center;
+  font-size: 1.3em
 }
 
 h1 {
   text-align: center;
   font-size: 3em;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 h2 {
@@ -309,6 +301,11 @@ table, th, td {
   .hide-big {
     display: none;
   }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+  }
 }
 
 @media screen and (min-width:1200px)
@@ -337,5 +334,8 @@ table, th, td {
   .snippet img {
     background: url("../pic/snippetL.png");
     background-repeat: no-repeat;
+  }
+  .grid {
+    grid-gap: 4em;
   }
 }
